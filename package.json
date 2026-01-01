@@ -1,0 +1,131 @@
+{
+  "name": "@zos-apps/zdaw",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "zos": {
+    "id": "ai.hanzo.zdaw",
+    "name": "zDAW",
+    "icon": "🎹",
+    "category": "audio",
+    "description": "Professional digital audio workstation",
+    "permissions": [
+      "audio",
+      "midi",
+      "storage.local",
+      "storage.files"
+    ],
+    "window": {
+      "defaultSize": {
+        "width": 1400,
+        "height": 900
+      },
+      "minSize": {
+        "width": 1024,
+        "height": 600
+      },
+      "resizable": true
+    },
+    "about": "Professional digital audio workstation for music production with multi-track recording, MIDI sequencing, virtual instruments, and real-time effects processing.",
+    "help": [
+      "Create audio/MIDI tracks with + button",
+      "Record with R, Play with Space",
+      "Switch views with Tab",
+      "Use piano roll for MIDI editing",
+      "Drag effects from browser to tracks"
+    ],
+    "docs": "https://zos-apps.github.io/zdaw",
+    "site": "https://github.com/zos-apps/zdaw",
+    "shortcuts": [
+      "Space Play/Stop",
+      "R Record",
+      "Tab Switch views",
+      "Cmd+S Save project",
+      "Cmd+Z Undo",
+      "Cmd+Shift+Z Redo"
+    ],
+    "features": [
+      "Multi-track arrangement",
+      "MIDI sequencing",
+      "Piano roll editor",
+      "Built-in synthesizer",
+      "Sample playback",
+      "Real-time effects",
+      "Mixer with inserts",
+      "Web MIDI support"
+    ],
+    "screenshots": {
+      "hero": "screenshots/hero.png",
+      "images": [
+        "screenshots/1-arrangement.png",
+        "screenshots/2-mixer.png",
+        "screenshots/3-piano.png"
+      ]
+    },
+    "downloads": {
+      "web": "https://zos-apps.github.io/zdaw"
+    },
+    "featured": true,
+    "tags": [
+      "audio",
+      "daw",
+      "music",
+      "production",
+      "midi",
+      "synthesizer"
+    ],
+    "releaseDate": "2024-12-29",
+    "support": "https://github.com/zos-apps/zdaw/issues",
+    "changelog": "https://github.com/zos-apps/zdaw/releases"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "dependencies": {
+    "@z-os/core": "workspace:*",
+    "@z-os/sdk": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@types/webmidi": "^2.1.0",
+    "@zos-apps/config": "workspace:*",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "description": "Professional digital audio workstation",
+  "homepage": "https://zos-apps.github.io/zdaw",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zos-apps/zdaw.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zos-apps/zdaw/issues"
+  },
+  "author": "Hanzo AI",
+  "license": "MIT",
+  "keywords": [
+    "zos",
+    "app",
+    "zdaw",
+    "daw",
+    "audio",
+    "music",
+    "production"
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/zos-apps"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
